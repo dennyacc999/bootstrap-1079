@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Page v2</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        /* Kotak luar dengan border tipis biru */
+        .main-container {
+            border: 1px solid #7a94a4;
+            padding: 40px;
+            width: 800px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #7a94a4;
+            font-size: 60px;
+            margin-bottom: 30px;
+            font-weight: normal;
+        }
+
+        /* Area abu-abu form */
+        .form-box {
+            background-color: #c4c4c4;
+            padding: 50px 80px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        /* Layout 3 kolom untuk nama */
+        .name-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 10px;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            background-color: transparent;
+            border: 1px solid #ffffff66;
+            color: white;
+            font-size: 16px;
+            outline: none;
+        }
+
+        /* Placeholder warna putih transparan */
+        input::placeholder {
+            color: #e0e0e0;
+        }
+
+        /* Tombol SIGNUP biru */
+        .btn-signup {
+            background-color: #2b60b0;
+            color: white;
+            border: none;
+            padding: 15px;
+            font-size: 18px;
+            letter-spacing: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+            text-transform: uppercase;
+        }
+
+        .btn-signup:hover {
+            background-color: #1e4682;
+        }
+
+        /* Teks bagian bawah */
+        .footer-text {
+            color: white;
+            margin-top: 25px;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+
+        .footer-text a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main-container">
+        <h1>Register</h1>
+
+        <div class="form-box">
+            <div class="name-row">
+                <input type="text" placeholder="Firstname">
+                <input type="text" placeholder="Middlename">
+                <input type="text" placeholder="Lastname">
+            </div>
+
+            <input type="text" placeholder="Username [alphanumeric min 6 chars]">
+
+            <input type="email" placeholder="Email">
+
+            <button class="btn-signup">Signup</button>
+
+            <div class="footer-text">
+                Have already an account? <a href="#">Login Now!</a><br>
+                Forgot your password? <a href="#">Click Here!</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
